@@ -1,0 +1,20 @@
+img {
+    height: calc(150vh - 76px);
+    width: 150%;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: floralwhite;
+    padding: 20px;
+    font-style: italic; /* Added italic style */
+ }
+.main {
+    background: url("../../image/emp3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 117%;
+}
+.employee-info {
+    color: wheat;
+} 

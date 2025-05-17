@@ -1,0 +1,144 @@
+
+  /* .form
+  {
+    
+    background-color: black;
+    border-radius: 10px;
+    padding: 51px;
+   
+    width: 450px;
+    margin-left: 24%;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 9px 9px 21px 8px;
+    height: 35rem;
+    overflow: auto;
+  }
+ 
+  .box {
+    padding: 20px;
+    margin: 20px;
+    width: 80%;
+    
+    background: rgba(0,0,0,0.5);
+    box-shadow: inset -3px -3px rgba(0,0,0,0.5);
+    color: white;
+    font-size: 1rem;
+  }
+  .box:hover{
+    background-color: white;
+    color: hotpink;
+  }
+  
+  ::placeholder{
+      color: white;
+      opacity: 0.7;
+      
+    }
+    h1 {
+      text-align: center;
+     
+      font-size: 50px;
+      font-weight: 800;
+      margin-left:-5cap;
+    }
+    
+  
+   */
+/* Full page container */
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header title */
+h1 {
+  text-align: center;
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Form card */
+.form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Input and select styling */
+.box {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+.box:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling */
+.btn-info {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+  background-color: #0056b3;
+}
+
+/* Center alignment for button */
+.text-center {
+  text-align: center;
+  margin-top: 20px;
+}
+.form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  /* Scrollbar settings */
+  max-height: 80vh;
+  overflow-y: auto;
+  scrollbar-width: thin; /* for Firefox */
+}
+
+/* Optional: Style the scrollbar for Chrome */
+.form::-webkit-scrollbar {
+  width: 6px;
+}
+.form::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+.form::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

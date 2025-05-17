@@ -1,0 +1,52 @@
+
+<div class="main container-fluid py-4" style="overflow-y: auto; height: 100vh; scrollbar-width: none;">
+  <h1 class="text-center text-white bg-dark py-3 rounded shadow mb-4">List Of Employees</h1>
+
+  <div class="card shadow p-4">
+    <div class="table-responsive">
+      <table class="table table-striped table-hover table-bordered align-middle text-center">
+        <thead class="table-dark sticky-top">
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Mail Id</th>
+            <th>Mobile Number</th>
+            <th>Department</th>
+            <th>Designation</th>
+            <th *ngIf="isAdmin">Salary</th>
+            <th>Date of Joining</th>
+            <th>Image</th>
+            <th colspan="2" *ngIf="isAdmin">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of allemployee">
+            <td>{{ employee?.eid }}</td>
+            <td>{{ employee?.ename }}</td>
+            <td>{{ employee?.gender }}</td>
+            <td>{{ employee?.email }}</td>
+            <td>{{ employee?.mobile }}</td>
+            <td>{{ employee?.department?.departmentName }}</td>
+            <td>{{ employee?.designation?.designationName }}</td>
+            <td *ngIf="isAdmin">{{ employee?.salary }}</td>
+            <td>{{ employee?.joiningDate }}</td>
+            <td>
+              <img [src]="employee?.image" alt="Image" class="img-thumbnail" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
+            </td>
+            <td *ngIf="isAdmin">
+              <button class="btn btn-sm btn-success" (click)="onEdit(employee)">
+                <i class="fa fa-pencil"></i> Edit
+              </button>
+            </td>
+            <td *ngIf="isAdmin">
+              <button class="btn btn-sm btn-danger" (click)="onDelete(employee)">
+                <i class="fa fa-trash"></i> Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
